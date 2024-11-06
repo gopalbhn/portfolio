@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-[#0f172a]">
+    <div class="flex justify-between item-center px-10 h-30 my-10">
+      <div
+        class="bg-[#4c69ed] h-[70px] w-[70px] rounded-full flex item-center justify-center relative"
+      >
+        <p class="text-md text-white w-fit h-5 absolute top-5">
+          <span class="font-bold">GB</span>
+        </p>
+        <span
+          class="h-[.5px] w-full bg-white animate-spin duration-[10000ms] ease absolute top-8 shadow-inner backdrop-blur-md shadow-slate-100 ring-2 ring-white ring-opacity-20 opacity-50"
+        ></span>
+      </div>
+      <div
+        class="w-900 h-15 border-2 rounded-3xl flex items-center sm:flex md:flex hidden justify-center shadow-slate-100 px-10 font-medium text-white bounce-bar"
+      >
+        <ul class="flex h-10 item-center inline gap-10">
+          <li class="button">
+            <a class="link-tag" href="#home">Home</a>
+          </li>
+          <li class="button">
+            <a class="link-tag" href="#">Contact</a>
+          </li>
+          <li class="button">
+            <a class="link-tag" href="#">Projects</a>
+          </li>
+          <li class="button">
+            <a class="link-tag" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="h-10 w-10 rounded-full font-bold" id="ChangeTheme">
+        <button
+          class="h-full w-full flex items-center justify-center"
+          onclick="toogleTheme()"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-sun-moon"
+          >
+            <path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="m4.9 4.9 1.4 1.4" />
+            <path d="m17.7 17.7 1.4 1.4" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="m6.3 17.7-1.4 1.4" />
+            <path d="m19.1 4.9-1.4 1.4" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <section
+      id="home"
+      class="h-[40vh] w-[80%] mx-auto mt-40 flex justify-around"
+    >
+      <div
+        class="h-20vh text-white font-bold text-8xl transition-all duration-100 opacity-50 bounce-ball"
+      >
+        <p text>
+          Gopal <br />
+          Bhandari
+        </p>
+      </div>
+      <div class="text-white text-lg">
+        <p>
+          Hey, I am here with the expertiese in diffrent field .<br />
+          I have been coding since 2020 <br />
+          Currently I am working on web devlopement
+        </p>
+      </div>
+    </section>
+    <section
+      class="min-h-[100vh] w-[80%] text-white text-3xl mx-auto sm:flex-col mt-10 mb-10"
+    >
+      <p class="text-center">Project</p>
+
+      <div class="h-[100vh] w-[100%]  box-border ">
+        <div class="h-[200px] w-[300px] border-2 hover:cursor-grab inline" onclick="">
+          <p class="text-center">Onlne Course App</p>
+          <div class="h-[150px] w-[250px] mx-auto">
+            <img
+              src="https://img.freepik.com/free-vector/flat-linear-online-education-homepage_23-2148911483.jpg"
+              class="h-full w-full"
+            />
+          </div>
+        </div>
+        <div class="h-[200px] w-[400px] border-2 hover:cursor-grab inline" onclick="">
+          <p class="text-center">Onlne Course App</p>
+          <div class="h-[150px] w-[350px] mx-auto">
+            <img
+              src="https://img.freepik.com/free-vector/flat-linear-online-education-homepage_23-2148911483.jpg"
+              class="h-full w-full"
+            />
+          </div>
+        </div>
+        <div class="h-[200px] w-[400px] border-2 hover:cursor-grab" onclick="">
+          <p class="text-center">Onlne Course App</p>
+          <div class="h-[150px] w-[350px] mx-auto">
+            <img
+              src="https://img.freepik.com/free-vector/flat-linear-online-education-homepage_23-2148911483.jpg"
+              class="h-full w-full"
+            />
+          </div>
+        </div>
+        <div class="h-[200px] w-[400px] border-2 hover:cursor-grab" onclick="">
+          <p class="text-center">Onlne Course App</p>
+          <div class="h-[150px] w-[350px] mx-auto">
+            <img
+              src="https://img.freepik.com/free-vector/flat-linear-online-education-homepage_23-2148911483.jpg"
+              class="h-full w-full"
+            />
+          </div>
+        </div>
+        <div class="h-[200px] w-[400px] border-2 hover:cursor-grab" onclick="">
+          <p class="text-center">Onlne Course App</p>
+          <div class="h-[150px] w-[350px] mx-auto">
+            <img
+              src="https://img.freepik.com/free-vector/flat-linear-online-education-homepage_23-2148911483.jpg"
+              class="h-full w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

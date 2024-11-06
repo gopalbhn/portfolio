@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button{
+    @apply hover:bg-[black] active:bg-[#9aeda8] md:w-full rounded-full px-2 flex items-center
+}
+.link-tag{
+    @apply hover:border-b-2 hover:border-black border-solid
+}
+
+@keyframes bounce-ball {
+    0%{
+        transform: translate(0);
+        text-shadow: 0px 0px 30px greenyellow ;
+    }
+    0% {
+        transform: translateY(-50px);
+      }
+      40% {
+        transform: translateY(0);
+      }
+      60% {
+        transform: translateY(-20px);
+      }
+      80% {
+        transform: translateY(0); 
+      }
+      100% {
+        transform: translateY(0); 
+      }
+}
+
+.bounce-ball{
+    animation: bounce-ball 1s ease-in-out ;
+}
+
+.bounce-bar {
+    animation: bounce-ball .5s ease-out;
+}
