@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+  
+      boxShadow :{
+        'custom' :'0 0 20px rgba(255,0,0,0.5)',
+      }
+  
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss')
+  ],
 }

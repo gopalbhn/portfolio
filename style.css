@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 .button{
-    @apply hover:bg-[black] active:bg-[#9aeda8] md:w-full rounded-full px-2 flex items-center
+    @apply hover:bg-[white] hover:text-[black] active:bg-[#9aeda8] md:w-full rounded-full px-2 flex items-center
 }
 .link-tag{
-    @apply hover:border-b-2 hover:border-black border-solid
+    @apply  hover:border-black border-solid
 }
+
 
 @keyframes bounce-ball {
     0%{
